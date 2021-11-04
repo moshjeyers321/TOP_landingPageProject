@@ -1,0 +1,31 @@
+* {
+    border: 1px solid red;
+}
+
+body{
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header>nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}

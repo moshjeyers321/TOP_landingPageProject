@@ -1,25 +1,47 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 body{
     background-color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-header {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    flex: 1;
 }
+
+/* COLORS and FONTS*/
+header, .hero {
+    background-color: #1F2937;
+}
+
+h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h4, .headerLink {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.headerLogo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+/* POSITIONING and SIZING */
 
 header>nav {
-    width: 800px;
+    /* width: 76vw; */
     display: flex;
     justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
     
 }
 header>nav>ul {
@@ -28,4 +50,86 @@ header>nav>ul {
     padding: 0;
     display: flex;
     gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 10px 100px;
+    /* max-width: 76vw; */
+}
+
+img {
+    height: auto;
+    max-width: 50%;
+}
+
+
+.info {
+    flex-direction: column;
+}
+
+.info>.title {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 40px;
+}
+
+.picture {
+    max-width: 150px;
+}
+
+.picture img {
+    max-width: 100%;
+    border: 2px solid #1F2937;
+    border-radius: 10px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
+.quote div {
+    width: 66%;
+}
+
+.quoteText {
+    color: #1F2937;
+    /* font: 36px light italic; */
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2937;
+    color: #e5e7eb;
 }

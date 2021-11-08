@@ -18,13 +18,8 @@ header, .hero {
     background-color: #1F2937;
 }
 
-h1 {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: bold;
-}
 
-h4, .headerLink {
+.headerLink {
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -64,17 +59,50 @@ main {
 
 section {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding: 10px 100px;
-    /* max-width: 76vw; */
 }
 
 img {
     height: auto;
     max-width: 50%;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 110px;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: 1px solid red;
+    
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroMain {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.heroSecondary {
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 
@@ -86,11 +114,13 @@ img {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .pictures {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     gap: 40px;
 }
@@ -108,22 +138,38 @@ img {
 .quote {
     display: flex;
     flex-direction: column;
+
     background-color: #e5e7eb;
+    padding: 0 150px;
 }
 
-.quote div {
-    width: 66%;
-}
-
-.quoteText {
+.quote p {
     color: #1F2937;
-    /* font: 36px light italic; */
+    margin: 0;
+    padding-top: 20px;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
 }
 
+.quote b {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    text-align: right;
+}
 
+.callToA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: #3882f6;
+    margin: 40px 15%;
+    /* margin: 0; */
+    border-radius: 10px;
+    color: #f9faf8;
+    
+}
 
 
 
